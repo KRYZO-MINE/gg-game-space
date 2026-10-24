@@ -328,7 +328,12 @@ section {
   display: grid;
   grid-template-columns: 64px 1fr;
   gap: 16px;
-  align-items: start
+  align-items: start;
+  transition: transform .2s ease
+}
+
+.feat li:hover {
+  transform: translateY(-3px)
 }
 
 .hex {
@@ -337,7 +342,13 @@ section {
   clip-path: var(--hex);
   background: var(--orange);
   display: grid;
-  place-items: center
+  place-items: center;
+  transition: box-shadow .2s ease, transform .2s ease
+}
+
+.feat li:hover .hex {
+  transform: scale(1.04);
+  box-shadow: 0 5px 14px rgba(224, 96, 26, .16)
 }
 
 .hex i {
@@ -561,11 +572,19 @@ footer ul {
 footer a {
   color: #94a3b8;
   text-decoration: none;
-  transition: color .2s
+  transition: color .2s, transform .2s
 }
 
 footer a:hover {
   color: #fff
+}
+
+footer li a {
+  display: inline-block
+}
+
+footer li a:hover {
+  transform: translateX(2px)
 }
 
 .footer-bottom {
@@ -659,13 +678,6 @@ footer a:hover {
 
   .cta .btn {
     flex: 1 1 100%
-  }
-
-  .hero-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px 10px;
-    font-size: .85rem
   }
 
   .menu-btn {
