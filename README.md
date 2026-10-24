@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/img/og-image.jpg" alt="GG Game Space Android gaming tools and in-game panel" width="100%">
+</p>
+
 # GG Game Space
 
 Official website for **GG Game Space**, an Android game-tools app. Browse the app's features, setup guidance, compatibility notes, FAQs, and official Google Play download.
@@ -5,8 +9,6 @@ Official website for **GG Game Space**, an Android game-tools app. Browse the ap
 **Website:** [gggame.space](https://www.gggame.space/) · **Google Play:** [GG Game Space](https://play.google.com/store/apps/details?id=com.zjx.gamebox)
 
 ## Website preview
-
-![GG Game Space Open Graph social preview](assets/img/og-image.jpg)
 
 The image above is also configured as the website's Open Graph image (`og:image`) for social link previews.
 
