@@ -19,6 +19,8 @@ The image above is also configured as the website's Open Graph image (`og:image`
 - [Getting Started](https://www.gggame.space/getting-started)
 - [Compatibility](https://www.gggame.space/compatibility)
 - [FAQ](https://www.gggame.space/faq)
+- [Troubleshooting](https://www.gggame.space/troubleshooting)
+- [Changelog](https://www.gggame.space/changelog)
 - [Download](https://www.gggame.space/download)
 - [Contact & Support](https://www.gggame.space/contact)
 - [Privacy Information](https://www.gggame.space/privacy)
@@ -39,6 +41,8 @@ The image above is also configured as the website's Open Graph image (`og:image`
 ├── getting-started.html
 ├── compatibility.html
 ├── faq.html
+├── troubleshooting.html
+├── changelog.html
 ├── download.html
 ├── contact.html
 ├── privacy.html

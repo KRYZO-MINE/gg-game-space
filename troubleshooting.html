@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GG Game Space Troubleshooting – Fix Common Issues</title>
+<meta name="description" content="Fix common GG Game Space problems: the in-game panel not showing, permission and setup issues, battery restrictions, the panel not opening, and game-specific limits.">
+<meta name="keywords" content="GG Game Space, GG Game Space troubleshooting, GG Game Space overlay not working, GG Game Space not showing, GG Game Space permissions, GG Game Space battery settings, in-game panel not opening, Android overlay permission, Android game tool problems">
+<link rel="canonical" href="https://www.gggame.space/troubleshooting">
+<meta name="theme-color" content="#070b14">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GG Game Space">
+<meta property="og:title" content="GG Game Space Troubleshooting – Fix Common Issues">
+<meta property="og:description" content="Common GG Game Space problems and the safe steps to try, from the panel not showing to permission and battery settings.">
+<meta property="og:url" content="https://www.gggame.space/troubleshooting">
+<meta property="og:image" content="https://www.gggame.space/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1733">
+<meta property="og:image:height" content="907">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GG Game Space Troubleshooting – Fix Common Issues">
+<meta name="twitter:description" content="Common GG Game Space problems and the safe steps to try, from the panel not showing to permission and battery settings.">
+<meta name="twitter:image" content="https://www.gggame.space/assets/img/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.gggame.space/"},{"@type":"ListItem","position":2,"name":"Troubleshooting","item":"https://www.gggame.space/troubleshooting"}]}</script>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap">
+<a class="brand" href="/" aria-label="GG Game Space, homepage"><img src="/assets/img/logo-96.webp" width="38" height="38" alt=""><span>GG Game Space</span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+<ul class="links" id="nav-links">
+<li><a href="/features">Features</a></li>
+<li><a href="/getting-started">Getting Started</a></li>
+<li><a href="/compatibility">Compatibility</a></li>
+<li><a href="/faq">FAQ</a></li>
+<li><a href="/troubleshooting" aria-current="page">Troubleshooting</a></li>
+<li><a class="btn sm" data-download href="https://play.google.com/store/apps/details?id=com.zjx.gamebox">Download</a></li>
+</ul></div></header>
+
+<main id="main" class="legal"><div class="wrap">
+<nav class="bcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Troubleshooting</span></nav>
+<h1>GG Game Space troubleshooting</h1>
+<p>These are common problems people run into with in-game tool apps, with safe steps to try in order. Work through one at a time and change a setting back if it does not help. The steps explain <em>why</em> each one might work, so you can decide which apply to you.</p>
+
+<h2 id="panel-missing">1. The in-game panel does not appear</h2>
+<ol>
+<li><strong>Confirm the game was launched from GG Game Space.</strong> A panel needs the app to be running alongside the game; launching the game directly may skip it.</li>
+<li><strong>Check the "display over other apps" permission.</strong> If your device or app version requires it, the panel cannot draw on top of the game without it. Grant it from the app's own prompt. <em>Why it helps:</em> Android blocks overlays unless this permission is given.</li>
+<li><strong>Check the app is still running in the background.</strong> Open recent apps and confirm GG Game Space was not closed. <em>Why it helps:</em> if the app is stopped, nothing is left to draw the panel.</li>
+<li><strong>Restart the game and the app.</strong> Close both fully, then launch the game from GG Game Space again.</li>
+</ol>
+<p>If the panel still does not appear, see <a href="#battery">battery restrictions</a> below, then contact <a href="/contact">support</a> with your device details.</p>
+
+<h2 id="permissions">2. Permission or setup prompt problems</h2>
+<ol>
+<li><strong>Read each prompt before accepting.</strong> Grant a permission only when the app explains why it needs it.</li>
+<li><strong>Grant one at a time, then retest.</strong> This makes it clear which setting actually fixed or caused the issue.</li>
+<li><strong>For USB debugging, be careful.</strong> It is a developer setting that lets a connected computer control parts of your device. Enable it only if the app's official instructions require it, never authorise an untrusted computer, and switch it off when you are done. <em>Why it may be asked for:</em> some game tools use it during first-time setup.</li>
+</ol>
+<p>See the <a href="/getting-started">setup guide</a> for what each setting is for. If a prompt is unclear, ask <a href="/contact">support</a> rather than guessing.</p>
+
+<h2 id="battery">3. Battery restrictions and background operation</h2>
+<ol>
+<li><strong>Set battery usage for GG Game Space to unrestricted.</strong> On many devices: <em>Settings &rarr; Apps &rarr; GG Game Space &rarr; Battery</em>, then choose unrestricted or "no restrictions". <em>Why it helps:</em> aggressive battery management can pause the app in the background and interrupt the panel.</li>
+<li><strong>Turn off "remove permissions if app is unused"</strong> for the app if your device offers it. <em>Why it helps:</em> this can silently revoke the overlay permission.</li>
+<li><strong>Test again without changing anything else.</strong> This confirms whether battery management was the cause.</li>
+</ol>
+<p class="muted">Menu names differ between manufacturers. If you cannot find these options, tell <a href="/contact">support</a> your device model.</p>
+
+<h2 id="panel-closes">4. The panel opens but closes or stops responding</h2>
+<ol>
+<li><strong>Update the app.</strong> Install the latest version from the <a href="https://play.google.com/store/apps/details?id=com.zjx.gamebox" target="_blank" rel="noopener noreferrer">Google Play listing</a>.</li>
+<li><strong>Close other overlay or recording apps.</strong> Two overlays competing for the same screen space can interfere with each other.</li>
+<li><strong>Restart your device.</strong> This clears a stuck state that a reinstall will not always fix.</li>
+<li><strong>Reinstall only as a last step.</strong> You may lose in-app settings; note them down first.</li>
+</ol>
+
+<h2 id="game-specific">5. A tool works in one game but not another</h2>
+<p>This is usually expected: games control what can run over them and what inputs they accept. A tool shown in the app is not guaranteed to work in every game.</p>
+<ul>
+<li>Check the game's own rules about overlays, control mapping and automation before using a tool.</li>
+<li>Some games close or refuse to run with overlays active — that is a decision made by the game.</li>
+<li>Performance tools (FPS, resolution) depend on your hardware and the game's limits, so results differ by title.</li>
+</ul>
+<p>See <a href="/compatibility">compatibility</a> for what is and is not verified.</p>
+
+<h2 id="android-version">6. Android version or device-specific issues</h2>
+<p>GG Game Space requires Android 11 or later according to the developer. If you are below that, the app may not install or behave correctly. If you are on a supported version and a problem persists, it may be a manufacturer-specific behaviour.</p>
+
+<h2>When to contact support</h2>
+<p>Contact <a href="/contact">GG Game Space support</a> if:</p>
+<ul>
+<li>You have worked through the relevant section above and the problem continues.</li>
+<li>A permission request looks unusual or you are unsure whether to grant it.</li>
+<li>The app asks for a device setting you cannot find.</li>
+</ul>
+<p>Include your phone model, Android version, app version, the game you tested and what happened. Those details let support give you a specific answer instead of guesses.</p>
+
+<p class="updated">Last reviewed: 25 October 2026. Steps are general troubleshooting guidance for in-game overlay tools and should be treated as suggestions, not guaranteed fixes. If a step does not apply to your device, skip it.</p>
+</div></main>
+
+<footer><div class="wrap"><div class="footer-grid">
+<div class="footer-col"><a class="brand footer-brand" href="/" aria-label="GG Game Space, homepage">GG Game Space</a><p class="footer-tagline">In-game tools for Android gaming.</p></div>
+<div class="footer-col"><h2>Quick Links</h2><ul><li><a href="/">Home</a></li><li><a href="/features">Features</a></li><li><a href="/getting-started">Getting Started</a></li><li><a href="/compatibility">Compatibility</a></li><li><a href="/faq">FAQ</a></li></ul></div>
+<div class="footer-col"><h2>More</h2><ul><li><a href="/troubleshooting">Troubleshooting</a></li><li><a href="/changelog">Changelog</a></li><li><a href="/download">Download</a></li><li><a href="/contact">Contact &amp; Support</a></li><li><a href="/privacy">Privacy Information</a></li><li><a href="/terms">Website Terms</a></li></ul></div>
+<div class="footer-col"><h2>Community</h2><ul><li><a href="https://chat.whatsapp.com/F58Pa9J7zvk4swQgJOlMnC" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="https://discord.gg/nmSEC42psM" target="_blank" rel="noopener noreferrer">Discord</a></li><li><a href="https://www.instagram.com/gg_gaming_apps2/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="mailto:sahil@ggmousepro.com">Email</a></li></ul></div>
+</div><div class="footer-bottom"><p>&copy; 2026 GG Game Space. All rights reserved. | gggame.space</p><p class="made-by">Made by <a href="https://www.kryzo.space/" target="_blank" rel="noopener noreferrer">Kryzo</a></p></div></div></footer>
+
+<div class="sticky-cta"><a class="btn" data-download data-download-label href="https://play.google.com/store/apps/details?id=com.zjx.gamebox">Get it on Google Play</a></div>
+
+<script src="/assets/js/config.js"></script><script src="/assets/js/main.js"></script>
+</body>
+</html>

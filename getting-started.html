@@ -3,13 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Getting Started with GG Game Space | Setup Guide</title>
-<meta name="description" content="Learn the basic GG Game Space install and setup flow, Android 11 requirement, and important notes about USB debugging and battery settings.">
-<meta name="keywords" content="GG Game Space, GG Game Space setup guide, how to use GG Game Space, GG Game Space Android app, install GG Game Space, Android 11 gaming tools, Android game panel setup, USB debugging setup, battery unrestricted setting, GG Game Space no root, add games to game panel">
+<title>How to Use GG Game Space on Android – Setup Guide</title>
+<meta name="description" content="Step-by-step GG Game Space setup on Android: check your version, install from Google Play, add a game, open the in-game panel, and understand each permission.">
+<meta name="keywords" content="GG Game Space, GG Game Space setup guide, how to use GG Game Space, install GG Game Space, Android 11 gaming tools, game panel setup, USB debugging setup, battery unrestricted setting, add games to game panel">
 <link rel="canonical" href="https://www.gggame.space/getting-started">
-<meta name="theme-color" content="#f8fafc">
+<meta name="theme-color" content="#070b14">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GG Game Space">
+<meta property="og:title" content="How to Use GG Game Space on Android – Setup Guide">
+<meta property="og:description" content="The GG Game Space install and setup flow, plus what each permission and device setting is for.">
+<meta property="og:url" content="https://www.gggame.space/getting-started">
+<meta property="og:image" content="https://www.gggame.space/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1733">
+<meta property="og:image:height" content="907">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Use GG Game Space on Android – Setup Guide">
+<meta name="twitter:description" content="The GG Game Space install and setup flow, plus what each permission and device setting is for.">
+<meta name="twitter:image" content="https://www.gggame.space/assets/img/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.gggame.space/"},{"@type":"ListItem","position":2,"name":"Getting Started","item":"https://www.gggame.space/getting-started"}]}</script>
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -18,35 +32,91 @@
 <a class="brand" href="/" aria-label="GG Game Space, homepage"><img src="/assets/img/logo-96.webp" width="38" height="38" alt=""><span>GG Game Space</span></a>
 <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
 <ul class="links" id="nav-links">
-<li><a href="/features">Features</a></li><li><a href="/getting-started" aria-current="page">Getting Started</a></li><li><a href="/compatibility">Compatibility</a></li><li><a href="/faq">FAQ</a></li><li><a href="/contact">Contact</a></li><li><a class="btn sm" href="https://play.google.com/store/apps/details?id=com.zjx.gamebox" target="_blank" rel="noopener noreferrer">Download</a></li>
+<li><a href="/features">Features</a></li>
+<li><a href="/getting-started" aria-current="page">Getting Started</a></li>
+<li><a href="/compatibility">Compatibility</a></li>
+<li><a href="/faq">FAQ</a></li>
+<li><a href="/troubleshooting">Troubleshooting</a></li>
+<li><a class="btn sm" data-download href="https://play.google.com/store/apps/details?id=com.zjx.gamebox">Download</a></li>
 </ul></div></header>
+
 <main id="main" class="legal"><div class="wrap">
-<p class="muted"><a href="/">Home</a> / Getting Started</p>
-<h1>Getting started with GG Game Space</h1>
-<p>This guide covers the basic path shown by the app: install GG Game Space, add a game, open it, and access tools from the in-game panel. Button names and setup prompts can change between app versions and Android devices.</p>
+<nav class="bcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Getting Started</span></nav>
+<h1>How to set up GG Game Space</h1>
+<p>This guide covers the basic path shown by the app: install GG Game Space, add a game, open the game, and use the tools from the in-game panel. Button names and setup prompts can change between app versions and Android devices, so treat this as the shape of the flow rather than an exact click-by-click script.</p>
+
+<h2>Before you start</h2>
+<ul>
+<li><strong>Device:</strong> an Android phone or tablet running <strong>Android 11 or later</strong> (developer-stated).</li>
+<li><strong>Source:</strong> install only from the <a href="/download">official Google Play listing</a>.</li>
+<li><strong>A game to test with:</strong> start with one game whose rules allow overlays and control tools, so you can experiment safely.</li>
+<li><strong>A few minutes of setup:</strong> some devices ask for extra settings the first time you use an in-game panel.</li>
+</ul>
 
 <h2>1. Check your Android version</h2>
-<p>The minimum Android version provided for this website is Android 11. Check the <a href="/compatibility">compatibility page</a> for the current requirements and known limitations.</p>
+<p>Open <em>Settings &rarr; About phone &rarr; Android version</em> and confirm you are on Android 11 or later. The <a href="/compatibility">compatibility page</a> explains the current requirements and what is not yet verified.</p>
 
 <h2>2. Install from Google Play</h2>
-<p>Use the <a href="/download">official Google Play download page</a>. Confirm the app name and listing before installing. Avoid third-party APK mirrors and links shared by unknown accounts.</p>
+<p>Use the <a href="/download">official Google Play download page</a>. Confirm the app name and listing before installing, and avoid third-party APK mirrors or links shared by unknown accounts.</p>
 
-<h2>3. Add a game and open the tool panel</h2>
-<p>Open GG Game Space and use its Added Games list to choose a game. Launch the game from the app as instructed by its current version, then open the GG Game Space panel to see available tools. The panel and feature set can vary by game and device.</p>
+<h2>3. Add a game in the app</h2>
+<p>Open GG Game Space and use its <em>Added Games</em> list to choose a game. Add the game you want to use tools with; the app keeps this list so you can launch from it.</p>
 
-<h2>4. Follow only setup prompts you understand</h2>
-<p>Owner-provided setup information mentions allowing unrestricted battery use and enabling USB debugging on some setups. These settings can affect device security or background behavior. Enable them only when the app's official instructions require them, follow the instructions carefully, and turn off USB debugging when you no longer need it. Do not share debugging authorization with untrusted computers.</p>
-<p>Root access is not required according to the information supplied for this website; rooted-device behavior may still vary. If a permission prompt or step is unclear, stop and ask <a href="/contact">support</a>.</p>
+<h2>4. Open the game and the tool panel</h2>
+<p>Launch the game from GG Game Space as the current version instructs. With the game running, open the GG Game Space panel to see the available tools, such as keymap, macro, virtual crosshair, resolution and device information. The panel and feature set can vary by game and device.</p>
 
-<h2>Need more information?</h2>
-<p>Browse the <a href="/features">feature guide</a>, check <a href="/faq">frequently asked questions</a>, or contact support. No specific game or device is guaranteed to work unless it is confirmed by the app publisher.</p>
+<h2>5. Understand the permissions and settings the app may request</h2>
+<p>Some steps below are device settings rather than app permissions. Enable them only when the app's official instructions require them, and change them back when you are done.</p>
+<div class="table-wrap">
+<table class="data">
+<caption>Settings GG Game Space and similar overlay tools may involve</caption>
+<thead>
+<tr><th scope="col">Setting</th><th scope="col">What it is for</th><th scope="col">Status</th></tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Display over other apps (overlay)</th>
+<td>Lets an app draw on top of other apps. An in-game panel needs a way to appear over a running game.</td>
+<td><span class="badge warn">Confirm in-app</span> whether your version asks for it and grant it only from the app's own prompt.</td>
+</tr>
+<tr>
+<th scope="row">Battery usage: unrestricted / no restrictions</th>
+<td>Stops Android from aggressively pausing the app in the background, which can otherwise interrupt the panel during a session.</td>
+<td><span class="badge unk">Developer-stated</span> the app advises unrestricted battery use for some setups.</td>
+</tr>
+<tr>
+<th scope="row">USB debugging (Developer options)</th>
+<td>Used by some game tools during first-time setup or advanced configuration.</td>
+<td><span class="badge warn">Sensitive</span> developer-stated setup mentions it for some setups. Turn it off when you no longer need it.</td>
+</tr>
+<tr>
+<th scope="row">Root access</th>
+<td>Not required.</td>
+<td><span class="badge ok">Not needed</span> Root is not required; the developer states the app also works on rooted devices.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Safety notes:</strong> USB debugging lets a connected computer control parts of your device. Enable it only if the app's official instructions require it, never authorise an untrusted computer, and switch it back off afterwards. If a permission prompt is unclear, stop and ask <a href="/contact">support</a> before granting it.</p>
+
+<h2>6. If something does not work</h2>
+<p>If the panel does not appear, a game closes unexpectedly, or a permission seems to block setup, work through the <a href="/troubleshooting">troubleshooting guide</a>. It covers the most common setup problems and when to contact support.</p>
+
+<p class="updated">Last reviewed: 25 October 2026. Setup steps can change with app and Android updates; this page describes the flow shown by the app and the information provided by its developer.</p>
+
+<h2>Next steps</h2>
+<p>Explore <a href="/features">what each tool does</a>, check <a href="/compatibility">compatibility</a>, read the <a href="/faq">FAQ</a>, or go to the <a href="/download">official download</a>.</p>
 </div></main>
+
 <footer><div class="wrap"><div class="footer-grid">
-<div class="footer-col"><a class="brand footer-brand" href="/">GG Game Space</a><p class="footer-tagline">In-game tools for Android gaming.</p></div>
+<div class="footer-col"><a class="brand footer-brand" href="/" aria-label="GG Game Space, homepage">GG Game Space</a><p class="footer-tagline">In-game tools for Android gaming.</p></div>
 <div class="footer-col"><h2>Quick Links</h2><ul><li><a href="/">Home</a></li><li><a href="/features">Features</a></li><li><a href="/getting-started">Getting Started</a></li><li><a href="/compatibility">Compatibility</a></li><li><a href="/faq">FAQ</a></li></ul></div>
-<div class="footer-col"><h2>More</h2><ul><li><a href="/download">Download</a></li><li><a href="/contact">Contact & Support</a></li><li><a href="/privacy">Privacy Information</a></li><li><a href="/terms">Website Terms</a></li></ul></div>
+<div class="footer-col"><h2>More</h2><ul><li><a href="/troubleshooting">Troubleshooting</a></li><li><a href="/changelog">Changelog</a></li><li><a href="/download">Download</a></li><li><a href="/contact">Contact &amp; Support</a></li><li><a href="/privacy">Privacy Information</a></li><li><a href="/terms">Website Terms</a></li></ul></div>
 <div class="footer-col"><h2>Community</h2><ul><li><a href="https://chat.whatsapp.com/F58Pa9J7zvk4swQgJOlMnC" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="https://discord.gg/nmSEC42psM" target="_blank" rel="noopener noreferrer">Discord</a></li><li><a href="https://www.instagram.com/gg_gaming_apps2/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="mailto:sahil@ggmousepro.com">Email</a></li></ul></div>
 </div><div class="footer-bottom"><p>&copy; 2026 GG Game Space. All rights reserved. | gggame.space</p><p class="made-by">Made by <a href="https://www.kryzo.space/" target="_blank" rel="noopener noreferrer">Kryzo</a></p></div></div></footer>
+
+<div class="sticky-cta"><a class="btn" data-download data-download-label href="https://play.google.com/store/apps/details?id=com.zjx.gamebox">Get it on Google Play</a></div>
+
 <script src="/assets/js/config.js"></script><script src="/assets/js/main.js"></script>
 </body>
 </html>

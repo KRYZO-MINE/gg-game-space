@@ -3,13 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GG Game Space Compatibility | Android Requirements</title>
-<meta name="description" content="Check GG Game Space Android requirements, root information, setup notes, and what is currently known about supported games and devices.">
-<meta name="keywords" content="GG Game Space, GG Game Space compatibility, GG Game Space Android requirements, Android 11 gaming tools, supported Android devices, supported games, game tool compatibility, GG Game Space no root, rooted Android device support, Android game overlay compatibility, device and game requirements">
+<title>GG Game Space Compatibility – Android Requirements</title>
+<meta name="description" content="GG Game Space Android requirements and compatibility guidance: minimum Android version, root, install source, and what is verified versus not yet tested.">
+<meta name="keywords" content="GG Game Space, GG Game Space compatibility, GG Game Space Android requirements, Android 11 gaming tools, supported Android devices, supported games, game tool compatibility, no root, rooted Android device support, device and game requirements">
 <link rel="canonical" href="https://www.gggame.space/compatibility">
-<meta name="theme-color" content="#f8fafc">
+<meta name="theme-color" content="#070b14">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GG Game Space">
+<meta property="og:title" content="GG Game Space Compatibility – Android Requirements">
+<meta property="og:description" content="Minimum Android version, root information, install source and what is verified versus not yet tested for GG Game Space.">
+<meta property="og:url" content="https://www.gggame.space/compatibility">
+<meta property="og:image" content="https://www.gggame.space/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1733">
+<meta property="og:image:height" content="907">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GG Game Space Compatibility – Android Requirements">
+<meta name="twitter:description" content="Minimum Android version, root information, install source and what is verified versus not yet tested for GG Game Space.">
+<meta name="twitter:image" content="https://www.gggame.space/assets/img/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.gggame.space/"},{"@type":"ListItem","position":2,"name":"Compatibility","item":"https://www.gggame.space/compatibility"}]}</script>
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -18,29 +32,102 @@
 <a class="brand" href="/" aria-label="GG Game Space, homepage"><img src="/assets/img/logo-96.webp" width="38" height="38" alt=""><span>GG Game Space</span></a>
 <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
 <ul class="links" id="nav-links">
-<li><a href="/features">Features</a></li><li><a href="/getting-started">Getting Started</a></li><li><a href="/compatibility" aria-current="page">Compatibility</a></li><li><a href="/faq">FAQ</a></li><li><a href="/contact">Contact</a></li><li><a class="btn sm" href="https://play.google.com/store/apps/details?id=com.zjx.gamebox" target="_blank" rel="noopener noreferrer">Download</a></li>
+<li><a href="/features">Features</a></li>
+<li><a href="/getting-started">Getting Started</a></li>
+<li><a href="/compatibility" aria-current="page">Compatibility</a></li>
+<li><a href="/faq">FAQ</a></li>
+<li><a href="/troubleshooting">Troubleshooting</a></li>
+<li><a class="btn sm" data-download href="https://play.google.com/store/apps/details?id=com.zjx.gamebox">Download</a></li>
 </ul></div></header>
+
 <main id="main" class="legal"><div class="wrap">
-<p class="muted"><a href="/">Home</a> / Compatibility</p>
+<nav class="bcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Compatibility</span></nav>
 <h1>GG Game Space compatibility and requirements</h1>
-<p>Check these requirements before installing. Device makers customize Android, and game publishers can limit overlays or automation tools, so individual features may behave differently even on compatible devices.</p>
-<dl class="spec">
-<div><dt>Platform</dt><dd>Android</dd></div>
-<div><dt>Minimum Android version</dt><dd>Android 11 or later, based on the product information supplied for this website. Always check the current Google Play listing for device-specific availability.</dd></div>
-<div><dt>Root</dt><dd>Root is not required. The product owner also reports use on rooted devices; this does not guarantee every feature will work on every rooted setup.</dd></div>
-<div><dt>Battery and debugging setup</dt><dd>Some setup instructions may ask for unrestricted battery use or USB debugging. See the <a href="/getting-started">setup guide</a> and enable sensitive settings only when official instructions require them.</dd></div>
-<div><dt>Supported games</dt><dd>No verified, complete supported-games list is published here. Check the app and each game's rules before relying on a feature.</dd></div>
-</dl>
+<p>Check these requirements before installing. Device makers customise Android, and game publishers can limit overlays or automation tools, so individual features may behave differently even on otherwise compatible devices.</p>
+
+<div class="table-wrap">
+<table class="data">
+<caption>What is currently known about GG Game Space requirements</caption>
+<thead>
+<tr><th scope="col">Requirement</th><th scope="col">Detail</th><th scope="col">Status</th></tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Platform</th>
+<td>Android phone or tablet.</td>
+<td><span class="badge ok">Confirmed</span> stated in the Google Play listing.</td>
+</tr>
+<tr>
+<th scope="row">Minimum Android version</th>
+<td>Android 11 or later.</td>
+<td><span class="badge unk">Developer-stated</span> always confirm device availability on the current <a href="https://play.google.com/store/apps/details?id=com.zjx.gamebox" target="_blank" rel="noopener noreferrer">Google Play listing</a>.</td>
+</tr>
+<tr>
+<th scope="row">Root access</th>
+<td>Not required.</td>
+<td><span class="badge ok">Not needed</span> the developer also reports use on rooted devices, which does not guarantee every feature works everywhere.</td>
+</tr>
+<tr>
+<th scope="row">Install source</th>
+<td>The official Google Play listing.</td>
+<td><span class="badge ok">Official</span> avoid third-party APK mirrors; see the <a href="/download">download page</a>.</td>
+</tr>
+<tr>
+<th scope="row">Setup settings</th>
+<td>Some setups may ask for unrestricted battery use or USB debugging.</td>
+<td><span class="badge warn">See guide</span> follow the <a href="/getting-started">setup guide</a> and enable sensitive settings only when required.</td>
+</tr>
+<tr>
+<th scope="row">Supported games (per title)</th>
+<td>No verified, per-game compatibility list is published on this site.</td>
+<td><span class="badge unk">Not yet verified</span> check each game's rules and test before relying on a tool.</td>
+</tr>
+<tr>
+<th scope="row">Performance results (FPS, resolution)</th>
+<td>No published benchmarks or guarantees.</td>
+<td><span class="badge unk">Not yet verified</span> results depend on hardware, software and the game.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>How to read these status labels</h2>
+<ul>
+<li><span class="badge ok">Confirmed</span> — stated in the app's public Google Play listing or by the developer.</li>
+<li><span class="badge unk">Developer-stated</span> / <span class="badge unk">Not yet verified</span> — provided by the developer or not independently tested here; treat it as a starting point, not a guarantee.</li>
+<li><span class="badge warn">See guide</span> — involves a device setting that needs care; follow the linked guide.</li>
+</ul>
+
 <h2>Why compatibility can vary</h2>
-<p>Android version, device manufacturer settings, screen layout, game updates, and game policy can all affect an in-game panel and its tools. A tool shown in screenshots is not a promise that it works in every game. FPS, resolution, memory, and other performance-related results depend on hardware and software and are not guaranteed.</p>
-<p>For setup help, read <a href="/getting-started">Getting Started</a> or contact <a href="/contact">GG Game Space support</a>.</p>
+<p>Android version, device manufacturer settings, screen layout, game updates and each game's own policy can all affect an in-game panel and its tools. A tool shown in the screenshots is not a promise that it works in every game. FPS, resolution, memory and other performance-related results depend on hardware and software and are not guaranteed.</p>
+
+<h2>Tested, reported, and not yet verified</h2>
+<p>To keep this page honest, we only label something “tested” when it has actually been tested here. Right now:</p>
+<ul>
+<li><strong>Tested:</strong> the Android platform and in-game panel flow shown in the app screenshots on this site.</li>
+<li><strong>Reported by users:</strong> not yet published — user reports will be added here once there are enough of them to be useful.</li>
+<li><strong>Not yet verified:</strong> specific phone models, specific game titles, and any performance results.</li>
+</ul>
+
+<h2>Help us verify your setup</h2>
+<p>If you have GG Game Space working (or not working) on a specific device, we'd like to know. When you report, include your phone model, Android version, app version, the game you tested and what happened.</p>
+<p class="lead-row"><a class="btn ghost" href="/contact">Report your device and game</a></p>
+
+<p class="updated">Last reviewed: 25 October 2026. Requirements reflect the developer's public information; compatibility is not guaranteed for any specific device or game.</p>
+
+<h2>Next steps</h2>
+<p>Follow the <a href="/getting-started">setup guide</a>, see <a href="/features">what each tool does</a>, or get help from <a href="/troubleshooting">troubleshooting</a>.</p>
 </div></main>
+
 <footer><div class="wrap"><div class="footer-grid">
-<div class="footer-col"><a class="brand footer-brand" href="/">GG Game Space</a><p class="footer-tagline">In-game tools for Android gaming.</p></div>
+<div class="footer-col"><a class="brand footer-brand" href="/" aria-label="GG Game Space, homepage">GG Game Space</a><p class="footer-tagline">In-game tools for Android gaming.</p></div>
 <div class="footer-col"><h2>Quick Links</h2><ul><li><a href="/">Home</a></li><li><a href="/features">Features</a></li><li><a href="/getting-started">Getting Started</a></li><li><a href="/compatibility">Compatibility</a></li><li><a href="/faq">FAQ</a></li></ul></div>
-<div class="footer-col"><h2>More</h2><ul><li><a href="/download">Download</a></li><li><a href="/contact">Contact & Support</a></li><li><a href="/privacy">Privacy Information</a></li><li><a href="/terms">Website Terms</a></li></ul></div>
+<div class="footer-col"><h2>More</h2><ul><li><a href="/troubleshooting">Troubleshooting</a></li><li><a href="/changelog">Changelog</a></li><li><a href="/download">Download</a></li><li><a href="/contact">Contact &amp; Support</a></li><li><a href="/privacy">Privacy Information</a></li><li><a href="/terms">Website Terms</a></li></ul></div>
 <div class="footer-col"><h2>Community</h2><ul><li><a href="https://chat.whatsapp.com/F58Pa9J7zvk4swQgJOlMnC" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="https://discord.gg/nmSEC42psM" target="_blank" rel="noopener noreferrer">Discord</a></li><li><a href="https://www.instagram.com/gg_gaming_apps2/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="mailto:sahil@ggmousepro.com">Email</a></li></ul></div>
 </div><div class="footer-bottom"><p>&copy; 2026 GG Game Space. All rights reserved. | gggame.space</p><p class="made-by">Made by <a href="https://www.kryzo.space/" target="_blank" rel="noopener noreferrer">Kryzo</a></p></div></div></footer>
+
+<div class="sticky-cta"><a class="btn" data-download data-download-label href="https://play.google.com/store/apps/details?id=com.zjx.gamebox">Get it on Google Play</a></div>
+
 <script src="/assets/js/config.js"></script><script src="/assets/js/main.js"></script>
 </body>
 </html>
