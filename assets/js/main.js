@@ -23,29 +23,26 @@
     if (v) { el.textContent = v; }
   });
 
-  // Download buttons: real link only when a verified URL is set
+  // Download links: wire the verified URL and open it safely.
+  // Labels stay authored in the HTML unless the link opts in with data-download-label.
   document.querySelectorAll('[data-download]').forEach(function (a) {
     if (c.downloadUrl) {
       a.href = c.downloadUrl;
       a.target = '_blank';
       a.rel = 'noopener noreferrer';
       a.removeAttribute('aria-disabled');
-      a.textContent = c.downloadLabel || 'Download';
+      if (a.hasAttribute('data-download-label') && c.downloadLabel) {
+        a.textContent = c.downloadLabel;
+      }
     } else {
       a.removeAttribute('href');
       a.setAttribute('aria-disabled', 'true');
     }
   });
 
-  // Navbar Download button appears only with a verified destination
-  if (c.downloadUrl) {
-    document.querySelectorAll('[data-when-download]').forEach(function (li) { li.hidden = false; });
-  }
-
-  // Support contact
+  // Support contact placeholder: only filled when the element has no authored copy.
   var s = document.getElementById('support-contact');
-  if (s && (c.supportEmail || c.supportUrl)) {
-    s.textContent = '';
+  if (s && s.textContent.trim() === '' && (c.supportEmail || c.supportUrl)) {
     if (c.supportEmail) {
       var m = document.createElement('a');
       m.href = 'mailto:' + c.supportEmail; m.textContent = c.supportEmail;
